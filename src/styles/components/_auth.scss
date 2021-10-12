@@ -22,15 +22,70 @@ body{
     width: 250px;
 }
 
-header{
+.header{
     background-color: #fff;
     width: 100%;
     position: relative;
     top: 0;
     height: 76px;
-    z-index: 1;
-    padding: 4px 40px;
+    z-index: 1;    
     box-shadow: 0px 0px 14px rgba(48, 45, 45, 0.06);  
+    &__item{
+        &--1{
+            position: relative;
+            &:before{
+                content: "";
+                width: 1px;
+                height: 10px;
+                background-color: $azul;
+                opacity: 0.6;
+                position: absolute;
+                right: 0;
+                top:0;
+                bottom: 0;
+                margin: auto;
+            }
+            ul{
+                li{
+                    &:last-child{
+                        margin-right: 20px;
+                    }
+                    a{
+                        padding: 0px 50px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-decoration: none;
+                        font-family: $poppins;                        
+                    }
+                }
+            }
+        }
+        &--2{
+            position: relative;            
+            ul{
+                li{
+                    &:first-child{
+                        margin-left: 20px;
+                    }
+                    a{
+
+                    }
+                }
+            }
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                a{
+                    color: $azul;
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
 }
 
 .bg{

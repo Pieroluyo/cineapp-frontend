@@ -16,6 +16,19 @@ main {
     width: 100%;
 }
 
+.ajs-error { 
+    background-color: #A31624 !important;
+    color : #fff !important;
+    font-size: 17px;
+}
+
+.ajs-success { 
+    background-color: #A31624 !important;
+    color : #fff !important;
+    font-size: 17px;
+}
+
+
 .mt-1 {
     margin-top: 5px;
 }
@@ -34,4 +47,39 @@ main {
 
 .pointer {
     cursor: pointer;
+}
+
+.carousel{
+    &-item{
+        height: 808px;
+    }
+}
+
+.titulo{
+    font-family: $poppins;
+    &--mediano{
+        color: $azul;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+.carousel-caption {    
+    bottom: 0;
+    right: none;
+    left: 10rem;
+    top: 0;
+    margin: auto;    
+    text-align: left;
+    width: 600px;
+    height: 436px;
+}
+
+
+@media(min-width: 1870px){
+
+    .container{
+        max-width: 1817px;
+    }
 }
